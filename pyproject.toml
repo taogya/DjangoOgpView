@@ -20,12 +20,6 @@ classifiers = [
 dependencies = [
 ]
 
-[tool.hatch.build]
-exclude = [
-    "build",
-    "django_ogp/tests"
-]
-
 [project.urls]
 "Homepage" = "https://github.com/taogya/DjangoOgpView"
 "Bug Tracker" = "https://github.com/taogya/DjangoOgpView/issues"
