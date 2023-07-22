@@ -55,13 +55,13 @@
 {% comment %}===== OgpCustomProperty =================================================={% endcomment %}
 {% if ogp_custom %}
   {% if not ogp %}
-    {% if not ogp.site and ogp_custom.site %}
+    {% if ogp_custom.site %}
       <meta property="og:site_name" content="{{ ogp_custom.site_name }}" />
     {% endif %}
-    {% if not ogp.site and ogp_custom.type %}
+    {% if ogp_custom.type %}
       <meta property="og:type" content="{{ ogp_custom.type }}" />
     {% endif %}
-    {% if not ogp.url and ogp_custom.url %}
+    {% if ogp_custom.url %}
       <meta property="og:url" content="{{ ogp_custom.url }}" />
     {% endif %}
   {% endif %}
