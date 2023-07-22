@@ -24,7 +24,6 @@ include = [
     "django_ogp/*",
     "django_ogp/templates",
 ]
-[tool.hatch.build]
 exclude = [
     "build",
     "django_ogp/tests"
