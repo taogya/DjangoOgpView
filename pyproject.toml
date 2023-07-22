@@ -19,6 +19,16 @@ classifiers = [
 ]
 dependencies = [
 ]
+[tool.hatch.build]
+include = [
+    "django_ogp/*",
+    "django_ogp/templates",
+]
+[tool.hatch.build]
+exclude = [
+    "build",
+    "django_ogp/tests"
+]
 
 [project.urls]
 "Homepage" = "https://github.com/taogya/DjangoOgpView"
