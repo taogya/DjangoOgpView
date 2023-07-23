@@ -7,7 +7,8 @@ SEO (Search Engine Optimization)対策に最適です。
 ## 導入
 1. ライブラリをインストールする。
     ```sh
-    pip install django-ogp-view # まだ未登録なので実施不可
+    pip install django-ogp-view
+     or
     pip install git+https://github.com/taogya/DjangoOgpView.git
     ```
 1. settings.pyに以下を追加する。
