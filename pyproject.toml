@@ -26,8 +26,8 @@ include = [
 ]
 exclude = [
     "build",
-    "django_ogp/tests"
-    "resources"
+    "django_ogp/tests",
+    "resources",
 ]
 
 [project.urls]
