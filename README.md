@@ -1,6 +1,6 @@
 # django-ogp-view
-すべてのViewクラスにOGP (The Open Graph protocol)を適応させるライブラリです。  
-view classに継承させることで、metaタグを簡単に設定できます。  
+ViewクラスにOGP (The Open Graph protocol)を適応させるライブラリです。  
+本ライブラリのViewMixinを継承させることで、ogp metaタグの実装が簡略化できます。  
 画面ごとにカスタマイズすることもできます。  
 SEO (Search Engine Optimization)対策に最適です。  
 
@@ -53,3 +53,14 @@ SEO (Search Engine Optimization)対策に最適です。
         {% add_ogp_meta %}
         :
     ```
+
+## Models
+![django_ogp_er_](/resources/django_ogp_er.png)
+
+## 補足
+- [マイグレーションファイル](django_ogp/migrations/0001_initial.py) にはマスターデータ自動生成スクリプトが含まれています。  
+不要なデータがありましたら, 管理者画面にて削除するか[マイグレーションファイル](django_ogp/migrations/0001_initial.py)を修正してください。
+- 以下のモデルは`swappable`なモデルです。
+    - OgpSiteProperty
+    - OgpLocaleMaster
+    - OgpMimeTypeMaster

@@ -41,14 +41,16 @@
     {% if media.type %}
       <meta property="og:{{ media.media_type }}:type" content="{{ media.type.name }}" />
     {% endif %}
-    {% if media.alt %}
-      <meta property="og:{{ media.media_type }}:alt" content="{{ media.alt }}" />
-    {% endif %}
-    {% if media.width %}
-      <meta property="og:{{ media.media_type }}:width" content="{{ media.width }}" />
-    {% endif %}
-    {% if media.height %}
-      <meta property="og:{{ media.media_type }}:height" content="{{ media.height }}" />
+    {% if media.media_type != 'audio' %}
+      {% if media.alt %}
+        <meta property="og:{{ media.media_type }}:alt" content="{{ media.alt }}" />
+      {% endif %}
+      {% if media.width %}
+        <meta property="og:{{ media.media_type }}:width" content="{{ media.width }}" />
+      {% endif %}
+      {% if media.height %}
+        <meta property="og:{{ media.media_type }}:height" content="{{ media.height }}" />
+      {% endif %}
     {% endif %}
   {% endfor %}
 {% endif %}

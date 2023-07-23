@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "django-ogp-view"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Taogya", email="132679709+taogya@users.noreply.github.com" },
 ]
@@ -27,6 +27,7 @@ include = [
 exclude = [
     "build",
     "django_ogp/tests"
+    "resources"
 ]
 
 [project.urls]
