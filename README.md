@@ -1,3 +1,5 @@
+[en](README_en.md)
+
 # django-ogp-view
 ViewクラスにOGP (The Open Graph protocol)を適応させるライブラリです。  
 本ライブラリのViewMixinを継承させることで、ogp metaタグの実装が簡略化できます。  
@@ -11,7 +13,7 @@ SEO (Search Engine Optimization)対策に最適です。
      or
     pip install git+https://github.com/taogya/DjangoOgpView.git
     ```
-1. settings.pyに以下を追加する。
+1. `settings.py`に以下を追加する。
     ```python
     INSTALLED_APPS = [
         :
